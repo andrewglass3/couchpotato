@@ -1,0 +1,11 @@
+version: '2'
+services:
+  couchpotote:
+    image: linuxserver/couchpotato
+    ports:
+    - "20102:5050"
+    restart: always
+    volumes:
+            - /dockerstore/couchpotato/config:/home/couchpotato/config
+            - /dockerstore/couchpotatoe/share:/mnt/Share
+
